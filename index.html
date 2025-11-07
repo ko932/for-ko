@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For My Sonpariii</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Playfair Display', serif;
+      }
+      .font-dancing-script {
+        font-family: 'Dancing Script', cursive;
+      }
+      @keyframes float {
+        0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+        100% { transform: translateY(-120vh) rotate(720deg); opacity: 0; }
+      }
+      @keyframes fall {
+        0% { transform: translateY(-20vh) rotate(-20deg); opacity: 1; }
+        100% { transform: translateY(120vh) rotate(60deg); opacity: 0; }
+      }
+      @keyframes text-glow {
+        0%, 100% { text-shadow: 0 0 8px #fff0f5, 0 0 12px #ffc0cb, 0 0 20px #ff7b9b, 0 0 30px #ff7b9b; }
+        50% { text-shadow: 0 0 16px #fff0f5, 0 0 24px #ffd1dc, 0 0 40px #ff9ab3, 0 0 60px #ff9ab3; }
+      }
+      .animate-text-glow {
+        animation: text-glow 3s ease-in-out infinite;
+      }
+      @keyframes wave-motion {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      .animate-wave-motion {
+        animation: wave-motion 25s linear infinite;
+      }
+      @keyframes teddy-bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-15px); }
+      }
+      .animate-teddy-bounce {
+        animation: teddy-bounce 2s ease-in-out infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
